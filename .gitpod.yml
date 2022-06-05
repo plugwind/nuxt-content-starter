@@ -1,0 +1,43 @@
+image: nberlette/gitpod-enhanced
+
+tasks:
+  - before: |
+      pnpm i -g pnpm @brlt/n
+    init: |
+      pnpm install
+    command: |
+      pnpm dev
+
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: true
+    addBadge: true
+    addCheck: true
+    addLabel: 'gitpod'
+
+ports:
+  - port: 3000-3100
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - antfu.vite
+    - antfu.iconify
+    - Nuxt.mdc
+    - Vue.volar
+    - Vue.vscode-typescript-vue-plugin
+    - redhat.vscode-yaml
+    - editorconfig.editorconfig
+    - dbaeumer.vscode-eslint
+    - esbenp.prettier-vscode
+    - voorjaar.windicss-intellisense
+    - christian-kohler.npm-intellisense
+    - christian-kohler.path-intellisense
+    - Jacano.vscode-pnpm
+    - GitHub.copilot
+    - gitpod.gitpod-remote-ssh
+    - gitpod.gitpod-desktop
+    - gitpod.gitpod-theme
