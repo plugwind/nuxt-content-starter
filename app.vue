@@ -12,7 +12,7 @@
   body {
     @apply bg-gray-50 text-gray-900 dark:(bg-stone-900 text-gray-50) transition-colors duration-100 linear;
   }
-  .prose + :is(h1, h2, h3), 
+  .prose + :is(h1, h2, h3),
   .prose > :is(h1, h2, h3):not(:first-child) {
     @apply mt-6;
   }
@@ -44,7 +44,7 @@
   pre, code {
     @apply !font-mono;
   }
-  
+
   pre {
     @apply bg-neutral-800 dark:bg-neutral-900 text-white px-0 py-0 mx-[-20px] my-4 rounded-none sm:(mx-0 rounded-md);
     @apply leading-6 tracking-tight [tab-width:2];
@@ -60,7 +60,7 @@
       }
     }
   }
-  
+
   :is(div.relative) > pre {
     @apply px-6 pt-5 pb-2;
   }
@@ -120,12 +120,12 @@
 
     & > pre {
       @apply !my-0 !mb-0 !mx-0;
-    
+
       & > code {
         @apply !mx-0 ;
       }
     }
-  }  
+  }
 
   /* full-width images */
   .full-bleed img, img.full-bleed {
@@ -134,6 +134,6 @@
   }
 
   .prose a[href] {
-    @apply underline decoration-gray-600/40 hover:decoration-gray-600/60 transition-colors ease-in duration-400 dark:5                    
+    @apply underline decoration-gray-600/40 hover:decoration-gray-600/60 transition-colors ease-in duration-400 dark:5
   }
-</style>,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,tfeq,
+</style>
